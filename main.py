@@ -7,7 +7,7 @@ ctypes.windll.kernel32.SetConsoleTitleW("Aleks Group Finder")
 
 
 def groupfinder():
-    id = random.randint(1000000, 1150000)
+    id = random.randint(1000000, 4000000)
     r = requests.get(f"https://www.roblox.com/groups/group.aspx?gid={id}") 
     if 'owned' not in r.text:
         re = requests.get(f"https://groups.roblox.com/v1/groups/{id}")
@@ -37,7 +37,7 @@ ____ _ _  _ ___  ____ ____
 """)
 
 #your webhook
-hook = input("[-] Enter your webhook url: "))
+hook = input("[-] Enter your webhook url: https://discord.com/api/webhooks/1068433192719228989/FYGAPn-bAy8ORLwapC3VenLh96m1rHKvsbwE0PFt7GU_7EZK6ha36VPDDOGJwS-A6Hpp"))
 #number of threads
 threads = int(input("[-] How many threads: "))
 
